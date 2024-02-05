@@ -19,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunitoSans.className}>
-        <Navbar/>
-        {children}
-        <Footer/>
+        <div className="container">
+          <Navbar/>
+          {children}
+          <Footer/>
+        </div>
         </body>
     </html>
   );
