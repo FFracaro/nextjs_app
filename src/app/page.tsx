@@ -10,13 +10,13 @@ export default function Home() {
         <h1 className={styles.title}>
           Hello, this is something, because why not?
         </h1>
-        <p className={styles.desc}>
+        <p className={styles.description}>
           Here we can see and do something, because why not?
         </p>
         <Button url="/portfolio" text="Look around"/>
       </div>
       <div className={styles.item}>
-        <Image src={heroImg} alt="" priority className={styles.img}/>
+        <Image src={heroImg} alt="" priority className={styles.image}/>
       </div>
     </div>
   );
