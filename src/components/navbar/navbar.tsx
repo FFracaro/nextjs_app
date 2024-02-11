@@ -3,6 +3,7 @@
 import styles from "@/components/navbar/navbar.module.css"
 import { LinksType } from "@/types/links";
 import Link from "next/link";
+import DarkModeToggle from "../dark-mode-toggle/dark-mode-toggle";
 
 const links: LinksType[] = [
     {
@@ -42,6 +43,7 @@ export default function Navbar() {
         <div className={styles.navbarContainer}>
             <Link href="/" className={styles.logo}>Hellow</Link>
             <div className={styles.links}>
+                <DarkModeToggle />
                 {links.map((link) => (
                     <Link key={link.id} href={link.url} className={styles.link}>
                         {link.title}

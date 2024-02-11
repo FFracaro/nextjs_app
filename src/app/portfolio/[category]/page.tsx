@@ -2,7 +2,7 @@ import styles from '@/app/portfolio/[category]/page.module.css'
 import Button from '@/components/button/button';
 import Image from 'next/image';
 
-export default function Category({params}) {
+export default function Category({ params }) {
   console.log(params)
     return (
       <div className={styles.categoryContainer}>
